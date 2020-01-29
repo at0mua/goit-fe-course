@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  outline: 1px solid red;
+}
+/* font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif; */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+  font-family: "Playfair Display", "Arial", serif;
+  color: #626262;
+}
+.page-nav {
+  padding: 68px 0;
+}
+.nav-menu {
+  font-size: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.nav-menu li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 106px;
+}
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+.nav-menu a {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-menu a:hover,
+.nav-menu a:focus {
+  color: #03a9f4;
+}
