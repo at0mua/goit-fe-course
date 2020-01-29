@@ -6,8 +6,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body {
-}
 img {
   display: block;
   max-width: 100%;
@@ -17,6 +15,7 @@ img {
   margin: 0 auto;
   padding: 0;
   width: 900px;
+  font-size: 0;
   font-family: "Playfair Display", "Arial", serif;
   color: #626262;
 }
@@ -48,4 +47,30 @@ img {
 .nav-list a:hover,
 .nav-list a:focus {
   color: #03a9f4;
+}
+/* Blog content, main information */
+.new-post {
+  width: 420px;
+  height: 550px;
+  display: inline-block;
+  overflow: hidden;
+}
+.nav-section {
+  font-family: "Ubuntu", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 30px;
+  color: #b4ad9e;
+}
+.post-header {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.post-content {
+  font-size: 14px;
+  line-height: 24px;
+  height: 72px;
+  overflow: hidden;
 }
