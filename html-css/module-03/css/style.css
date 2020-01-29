@@ -6,6 +6,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
 img {
   display: block;
   max-width: 100%;
@@ -25,8 +29,7 @@ img {
 }
 .nav-list {
   font-size: 0;
-  text-align: center;
-  vertical-align: middle;
+  padding-left: 164px;
 }
 .nav-list li {
   list-style: none;
@@ -54,6 +57,10 @@ img {
   height: 550px;
   display: inline-block;
   overflow: hidden;
+  margin-bottom: 60px;
+}
+.left-post {
+  margin-right: 60px;
 }
 .nav-section {
   font-family: "Ubuntu", "Arial", sans-serif;
@@ -73,4 +80,15 @@ img {
   line-height: 24px;
   height: 72px;
   overflow: hidden;
+}
+/* Load more button */
+.load-more-button {
+  width: 164px;
+  height: 60px;
+  font-family: "Playfair Display", "Arial", serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 368px 70px 368px;
+  padding: 0;
+  color: #626262;
 }
