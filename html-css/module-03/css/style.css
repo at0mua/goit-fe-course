@@ -26,6 +26,7 @@ img {
 /* Navigation menu, header */
 .page-nav {
   padding: 68px 0;
+  margin-bottom: 35px;
 }
 .nav-list {
   font-size: 0;
