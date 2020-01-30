@@ -53,15 +53,19 @@ img {
   color: #03a9f4;
 }
 /* Blog content, main information */
-.new-post {
+.left-post,
+.right-post {
   width: 420px;
   height: 550px;
   display: inline-block;
   overflow: hidden;
-  margin-bottom: 60px;
 }
 .left-post {
   margin-right: 60px;
+}
+.top-row,
+.middle-row {
+  margin-bottom: 60px;
 }
 .nav-section {
   font-family: "Ubuntu", "Arial", sans-serif;
@@ -84,6 +88,7 @@ img {
 }
 /* Load more button */
 .load-more-button {
+  display: block;
   width: 164px;
   height: 60px;
   font-family: "Playfair Display", "Arial", serif;
