@@ -97,6 +97,7 @@ img {
   color: #626262;
   border: 1px solid #626262;
   background: none;
+  cursor: pointer;
 }
 .load-more-button:hover,
 .load-more-button:focus {

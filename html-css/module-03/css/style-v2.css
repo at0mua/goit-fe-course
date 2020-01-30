@@ -6,13 +6,13 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body {
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 960px;
+  font-size: 0;
   font-family: "Playfair Display", "Arial", serif;
   color: #626262;
-  font-size: 0;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 120px;
 }
 img {
   display: block;
@@ -22,7 +22,7 @@ img {
 
 /* Navigation menu, header */
 .page-nav {
-  padding: 68px 0;
+  padding: 72px 0;
 }
 .nav-list {
   margin: 0 auto;
@@ -56,15 +56,13 @@ img {
   display: inline-block;
   margin: auto;
   width: 960px;
-  height: 550px;
   margin-bottom: 60px;
 }
 .left-post,
 .right-post {
   width: 470px;
-  height: 550px;
   margin: 0px 5px;
-  padding: 35px 25px;
+  padding: 28px 25px 0 25px;
   display: inline-block;
   overflow: hidden;
 }
@@ -87,8 +85,8 @@ img {
   height: 72px;
   overflow: hidden;
 }
-.row-3 {
-  margin: 0;
+.content-row:nth-last-of-type(-n + 1) {
+  margin-bottom: 40px;
 }
 /* Load more button */
 .load-more-button {
@@ -98,7 +96,15 @@ img {
   font-family: "Playfair Display", "Arial", serif;
   font-size: 20px;
   line-height: 24px;
-  margin: 20px 398px 70px 398px;
+  margin: 0 auto 70px auto;
   padding: 0;
   color: #626262;
+  border: 1px solid #626262;
+  background: none;
+  cursor: pointer;
+}
+.load-more-button:hover,
+.load-more-button:focus {
+  color: #03a9f4;
+  border: 1px solid #03a9f4;
 }
