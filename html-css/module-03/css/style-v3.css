@@ -6,11 +6,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-* {
-  outline: 1px solid red;
-}
-/* font-family: 'Playfair Display', serif;
-font-family: 'Ubuntu', sans-serif; */
 img {
   display: block;
   max-width: 100%;
@@ -20,34 +15,88 @@ img {
   margin: 0 auto;
   padding: 0;
   width: 900px;
+  font-size: 0;
   font-family: "Playfair Display", "Arial", serif;
   color: #626262;
 }
-.page-nav {
-  padding: 68px 0;
+
+/* Navigation menu, header */
+.page-navigation {
+  padding: 72px 0 100px 0;
 }
-.nav-menu {
-  font-size: 0;
-  text-align: center;
-  vertical-align: middle;
+.navigation-list {
+  padding-left: 164px;
 }
-.nav-menu li {
+.navigation-list li {
   list-style: none;
   display: inline-block;
   margin-right: 106px;
 }
-.nav-menu li:last-child {
+.navigation-list li:last-child {
   margin-right: 0;
 }
-.nav-menu a {
+.navigation-list a {
   display: block;
   font-size: 14px;
   line-height: 24px;
-  color: #626262;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #626262;
 }
-.nav-menu a:hover,
-.nav-menu a:focus {
+.navigation-list a:hover,
+.navigation-list a:focus {
+  color: #03a9f4;
+}
+
+/* Blog content, main information */
+.blog-content {
+  margin-bottom: 40px;
+}
+.new-post {
+  width: 420px;
+  margin-right: 60px;
+  margin-bottom: 110px;
+  display: inline-block;
+}
+.new-post:nth-child(2n) {
+  margin-right: 0;
+}
+.new-post:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+.navigation-item {
+  font-family: "Ubuntu", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 30px;
+  color: #b4ad9e;
+}
+.post-header {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.post-content {
+  font-size: 14px;
+  line-height: 24px;
+  height: 72px;
+  overflow: hidden;
+}
+
+/* Load more button */
+.load-more-button {
+  display: block;
+  width: 164px;
+  height: 60px;
+  font-family: "Playfair Display", "Arial", serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 368px 70px 368px;
+  padding: 0;
+  color: #626262;
+}
+.load-more-button:hover,
+.load-more-button:focus {
   color: #03a9f4;
 }
