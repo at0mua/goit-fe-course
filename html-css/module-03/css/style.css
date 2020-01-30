@@ -6,10 +6,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body {
-  width: 1200px;
-  margin: 0 auto;
-}
 img {
   display: block;
   max-width: 100%;
@@ -25,8 +21,7 @@ img {
 }
 /* Navigation menu, header */
 .page-nav {
-  padding: 68px 0;
-  margin-bottom: 35px;
+  padding: 72px 0 100px 0;
 }
 .nav-list {
   font-size: 0;
@@ -56,16 +51,18 @@ img {
 .left-post,
 .right-post {
   width: 420px;
-  height: 550px;
+  /* margin-bottom: 130px; */
   display: inline-block;
-  overflow: hidden;
 }
 .left-post {
   margin-right: 60px;
 }
 .top-row,
 .middle-row {
-  margin-bottom: 60px;
+  margin-bottom: 130px;
+}
+.bottom-row {
+  margin-bottom: 50px;
 }
 .nav-section {
   font-family: "Ubuntu", "Arial", sans-serif;
