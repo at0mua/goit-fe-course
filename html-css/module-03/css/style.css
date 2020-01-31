@@ -24,7 +24,7 @@ img {
   padding: 72px 0 100px 0;
 }
 .nav-list {
-  padding-left: 164px;
+  text-align: center;
 }
 .nav-list li {
   list-style: none;
@@ -48,6 +48,9 @@ img {
 }
 
 /* Blog content, main information */
+.blog-content {
+  padding-bottom: 70px;
+}
 .new-post {
   width: 420px;
   margin-right: 60px;
@@ -76,8 +79,6 @@ img {
 .post-content {
   font-size: 14px;
   line-height: 24px;
-  height: 72px;
-  overflow: hidden;
 }
 /* Load more button */
 .load-more-button {
@@ -87,7 +88,7 @@ img {
   font-family: "Playfair Display", "Arial", serif;
   font-size: 20px;
   line-height: 24px;
-  margin: 0 auto 70px auto;
+  margin: 0 auto;
   padding: 0;
   color: #626262;
   border: 1px solid #626262;
