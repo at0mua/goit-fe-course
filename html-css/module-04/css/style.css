@@ -10,7 +10,6 @@ html {
 
 img {
   display: block;
-  /* min-width: 100%; */
   height: auto;
 }
 
@@ -18,7 +17,6 @@ img {
   margin: 0 auto;
   padding: 0;
   width: 1110px;
-  font-size: 0;
 }
 
 .clearfix:after {
@@ -207,6 +205,7 @@ img {
   margin-right: 30px;
   width: 350px;
   float: left;
+  list-style: none;
 }
 .new-blog:last-child {
   margin-right: 0;
