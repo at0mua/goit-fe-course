@@ -57,11 +57,10 @@ img {
 
 .menu-section li {
   float: left;
-  margin-right: 32px;
 }
 
-.menu-section li:last-child {
-  margin-right: 0;
+.menu-section li:not(:last-child) {
+  margin-right: 32px;
 }
 
 .menu-section a {
