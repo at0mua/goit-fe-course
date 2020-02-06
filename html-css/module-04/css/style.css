@@ -114,6 +114,7 @@ img {
 
 .featured-item {
   padding: 0;
+  width: 255px;
   float: left;
   background-color: #e9f0fd;
 }
