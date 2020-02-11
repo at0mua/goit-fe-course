@@ -88,12 +88,12 @@ img {
 
 .section-featured-title {
   margin: 0 auto;
+  padding-bottom: 92px;
   font-family: "Roboto", sans-serif;
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 92px;
   color: #515151;
 }
 
@@ -129,10 +129,10 @@ img {
 
 .item-title {
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
   font-size: 18px;
   font-weight: 900;
   line-height: 40px;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #323232;
 }
