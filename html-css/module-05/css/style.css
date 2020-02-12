@@ -251,7 +251,6 @@ input[type="“radio”"].visually-hidden {
 }
 
 .product-actions li {
-  display: inline-block;
   float: left;
   margin: 0 8px 8px 0;
 }
