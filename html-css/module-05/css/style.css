@@ -98,12 +98,6 @@ input[type="“radio”"].visually-hidden {
 
 /* MAIN CONTENT */
 
-.main-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  width: 1600px;
-}
-
 /* SLIDER */
 
 .slider {
@@ -113,9 +107,10 @@ input[type="“radio”"].visually-hidden {
 
 .slider img {
   margin: 0 auto;
+  width: 100%;
 }
 
-.slider::before {
+.slider::after {
   /* SLIDER OVERLAY */
   display: block;
   content: "";
@@ -130,12 +125,18 @@ input[type="“radio”"].visually-hidden {
   z-index: 2;
 }
 
-.slider-1 {
+.slide-btns-info {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+}
+
+.slide-btns-info::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .slide-btn {
@@ -169,14 +170,16 @@ input[type="“radio”"].visually-hidden {
 }
 
 .slide-info {
+  width: 760px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
   color: #ffffff;
-  z-index: 3;
+  z-index: 4;
 }
 
 .slide-info h2 {
@@ -187,7 +190,7 @@ input[type="“radio”"].visually-hidden {
 }
 
 .slide-info p {
-  margin: 0 auto;
+  margin: 0;
   font-size: 24px;
   line-height: 54px;
   font-weight: 300;
@@ -238,7 +241,7 @@ input[type="“radio”"].visually-hidden {
   width: 255px;
 }
 
-.card-item:not(:last-child) {
+.card-item:not(:nth-child(4n + 4)) {
   margin-right: 30px;
 }
 
@@ -327,9 +330,6 @@ input[type="“radio”"].visually-hidden {
 /* CARD NAME AND PRICE */
 
 .item-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 900;
@@ -368,7 +368,7 @@ input[type="“radio”"].visually-hidden {
 .card-item:hover > .item-title {
   background-color: #1abc9c;
 }
-.card-item:hover > .card-overlay {
+.card-item:hover .card-overlay {
   opacity: 1;
 }
 
