@@ -11,7 +11,6 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  width: 1600px;
 }
 
 img {
@@ -49,8 +48,7 @@ input[type="“radio”"].visually-hidden {
 
 /* NAVIGATION MENU */
 
-.navigation {
-  margin: 0;
+.main-header nav {
   padding: 30px 0 36px 0;
 }
 
@@ -98,13 +96,29 @@ input[type="“radio”"].visually-hidden {
   color: #1abc9c;
 }
 
+/* MAIN CONTENT */
+
+.main-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 1600px;
+}
+
 /* SLIDER */
 
 .slider {
+  margin: 0 auto;
   position: relative;
 }
 
-.slider-overlay {
+.slider img {
+  margin: 0 auto;
+}
+
+.slider::before {
+  /* SLIDER OVERLAY */
+  display: block;
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -116,18 +130,22 @@ input[type="“radio”"].visually-hidden {
   z-index: 2;
 }
 
-.slide-btn {
+.slider-1 {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.slide-btn {
   display: block;
   margin: 0;
   padding: 0;
   width: 104px;
   height: 104px;
-  top: 50%;
-  transform: translateY(-50%);
   background-color: rgba(26, 188, 156, 0.651);
   border: none;
-  z-index: 3;
 }
 
 .slide-btn svg {
@@ -143,11 +161,11 @@ input[type="“radio”"].visually-hidden {
 }
 
 .left-btn {
-  left: 15%;
+  float: left;
 }
 
 .right-btn {
-  right: 15%;
+  float: right;
 }
 
 .slide-info {
