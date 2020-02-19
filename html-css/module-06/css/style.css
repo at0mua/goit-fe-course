@@ -84,6 +84,7 @@ input[type="“radio”"].visually-hidden {
   text-transform: uppercase;
   font-weight: 400;
   color: #95e1d3;
+  transition: color 200ms linear;
 }
 
 .menu-link::after {
@@ -95,17 +96,16 @@ input[type="“radio”"].visually-hidden {
   height: 3px;
   background-color: #f38181;
   opacity: 0;
+  transition: opacity 200ms linear;
 }
 
 .menu-link:hover,
 .menu-link:focus {
   color: #f38181;
-  transition-duration: 200ms;
 }
 
 .menu-item:hover .menu-link::after {
   opacity: 1;
-  transition-duration: 200ms;
 }
 
 /* MAIN CONTENT */
@@ -169,6 +169,7 @@ input[type="“radio”"].visually-hidden {
   margin: 0 0 14px 0;
   font-size: 14px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .services-info {
@@ -197,6 +198,7 @@ input[type="“radio”"].visually-hidden {
 .icon-line-craph::before {
   background-image: url(../img/services_icons/line_craph.png);
 }
+
 .icon-computer::before {
   background-image: url(../img/services_icons/computer.png);
 }
@@ -211,4 +213,193 @@ input[type="“radio”"].visually-hidden {
 
 .icon-image::before {
   background-image: url(../img/services_icons/image.png);
+}
+
+/* SECTION OUR TEAM */
+
+.our-team {
+  padding-bottom: 80px;
+}
+
+.section-description {
+  margin: 0 auto;
+  padding: 44px 0 90px 0;
+  width: 980px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+}
+
+.our-team-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-card {
+  position: relative;
+  background-color: #95e1d3;
+}
+
+.member-photo {
+  display: block;
+  transition: transform 200ms linear;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
+  z-index: 19;
+  opacity: 0;
+  transition: opacity 200ms linear, transform 200ms linear;
+}
+
+.card-social-icons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 26;
+}
+
+.social-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-right: 1px solid rgba(243, 129, 129, 0.502);
+  background-color: #fce38a;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 200ms linear;
+}
+
+.icon-facebook {
+  background-image: url(../img/social_icons/facebook.png);
+}
+
+.icon-twitter {
+  background-image: url(../img/social_icons/twitter.png);
+}
+
+.icon-pinterest {
+  background-image: url(../img/social_icons/pinterest.png);
+}
+
+.icon-instagram {
+  background-image: url(../img/social_icons/instagram.png);
+  border: none;
+}
+
+.social-icon:hover {
+  background-color: #95e1d3;
+}
+
+.member-name {
+  margin: 28px 0 12px 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.member-position {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+/* CARD OVERLAY */
+
+.team-member:hover .member-photo {
+  transform: translate(-10px, -10px);
+}
+
+.team-member:hover .card-overlay {
+  opacity: 1;
+  transform: translate(-10px, -10px);
+}
+
+/* FOOTER */
+
+.footer {
+  min-height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #f38181;
+}
+
+.input-form {
+  display: flex;
+  justify-content: end;
+}
+
+.email-input {
+  width: 230px;
+  height: 40px;
+  padding-left: 12px;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.subscribe-button {
+  padding: 0;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  border: none;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transition-property: color, background-color, border;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.subscribe-button:hover {
+  color: #95e1d3;
+  background-color: #ffffff;
+  border: 1px solid #95e1d3;
 }
