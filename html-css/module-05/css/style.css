@@ -235,7 +235,6 @@ input[type="“radio”"].visually-hidden {
 }
 
 .card-item {
-  position: relative;
   padding: 0;
   float: left;
   width: 255px;
@@ -247,12 +246,16 @@ input[type="“radio”"].visually-hidden {
 
 /* GALLERY CARD OVERLAY */
 
+.item-img-overlay {
+  position: relative;
+}
+
 .card-overlay {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 235px;
-  height: 262px;
+  bottom: 10px;
+  right: 10px;
   outline: 10px solid rgba(255, 255, 255, 0.549);
   background-color: rgba(0, 0, 0, 0.549);
   opacity: 0;
