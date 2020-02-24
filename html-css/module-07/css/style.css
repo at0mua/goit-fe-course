@@ -1,0 +1,170 @@
+/* FONTS */
+
+/* alex-brush-regular - latin  instead of Wisdom Script*/
+@font-face {
+  font-family: "Alex Brush";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Alex Brush Regular"), local("AlexBrush-Regular"),
+    url("../fonts/alex-brush-v11-latin/alex-brush-v11-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/alex-brush-v11-latin/alex-brush-v11-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-900 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin/roboto-slab-v11-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin/roboto-slab-v11-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-serif-italic - latin instead of Droid serif*/
+@font-face {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
+    url("../fonts/noto-serif-v8-latin/noto-serif-v8-latin-italic.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/noto-serif-v8-latin/noto-serif-v8-latin-italic.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* MAIN PAGE */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/* NAVIGATION MENU */
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 65px;
+}
+
+.site-logo {
+  display: block;
+  font-family: "Alex Brush", sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1;
+  color: #fed136;
+}
+
+.navigation-menu {
+  margin: 0;
+  padding: 0;
+  width: 495px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-link {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222222;
+  transition: color 200ms linear;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #fed136;
+}
+
+/* MAIN CONTENT */
+
+.section-title {
+  margin: 0 auto;
+  font-size: 40px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  display: block;
+  font-size: 16px;
+  color: #777777;
+  font-family: "Noto Serif";
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+}
+
+/* SECTION SERVICES */
+
+.services {
+  padding: 120px 0;
+}
+
+.services-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.service-item {
+  flex: 0 0 290px;
+}
