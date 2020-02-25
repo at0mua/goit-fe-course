@@ -79,6 +79,13 @@ html {
 
 body {
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -98,7 +105,7 @@ body {
 .site-logo {
   display: block;
   font-family: "Alex Brush", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   text-decoration: none;
   line-height: 1;
   color: #fed136;
@@ -115,7 +122,6 @@ body {
 
 .navigation-link {
   display: block;
-  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
@@ -135,7 +141,6 @@ body {
   margin: 0 auto;
   font-size: 40px;
   color: #222222;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -148,7 +153,6 @@ body {
   color: #777777;
   font-family: "Noto Serif", sans-serif;
   font-weight: 400;
-  text-align: center;
   text-transform: none;
 }
 
@@ -159,7 +163,6 @@ body {
 }
 
 .services-menu {
-  margin: 0;
   padding: 80px 0 0 0;
   display: flex;
   justify-content: space-between;
@@ -198,7 +201,6 @@ body {
 
 .service-name {
   margin: 26px 0 12px 0;
-  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #222222;
@@ -210,4 +212,107 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #777777;
+}
+
+/* SECTION CONTACT US */
+
+.contactus {
+  padding: 106px 0 0 0;
+  min-height: 676px;
+  background-color: #222222;
+  background-image: url(../img/Map-Image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.contactus-title {
+  color: #ffffff;
+}
+
+.contactus-form {
+  padding-top: 78px;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 210px;
+  margin-bottom: 30px;
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inputs-wrapper input {
+  padding-left: 20px;
+  width: 455px;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.user-message {
+  padding: 16px 0 0 20px;
+  resize: none;
+  width: 455px;
+  height: 210px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+.inputs-wrapper input[class="username-input"]:valid,
+.inputs-wrapper input[class="email-input"]:valid,
+.user-message:valid {
+  outline: 3px solid #008000;
+}
+
+.inputs-wrapper input[class="username-input"]:focus:invalid,
+.inputs-wrapper input[class="email-input"]:focus:invalid,
+.user-message:focus:invalid {
+  outline: 3px solid #ff0000;
+}
+
+.inputs-wrapper input::placeholder,
+.user-message::placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+.submit-form-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 240px;
+  height: 65px;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #fed136;
+  cursor: pointer;
+  transition-property: color, background-color, border;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.submit-form-btn:hover {
+  color: #fed136;
+  background-color: #ffffff;
+  border: 1px solid #fed136;
 }

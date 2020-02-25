@@ -31,13 +31,13 @@
       </nav>
     </header>
     <main>
-      <section class="services container">
+      <section class="services">
         <h2 class="section-title">
           Services<span class="sub-title"
             >Proin iaculis purus consequat sem cure.</span
           >
         </h2>
-        <ul class="services-menu">
+        <ul class="services-menu container">
           <li class="service-item icon-basket">
             <h3 class="service-name">E-Commerce</h3>
             <p class="service-dscr">
@@ -63,6 +63,52 @@
             </p>
           </li>
         </ul>
+      </section>
+      <section class="contactus">
+        <h2 class="section-title contactus-title">
+          Contact us<span class="sub-title"
+            >Proin iaculis purus consequat sem cure.</span
+          >
+        </h2>
+        <form action="#" class="contactus-form container">
+          <div class="form-wrapper">
+            <div class="inputs-wrapper">
+              <input
+                class="username-input"
+                type="text"
+                name="user_name"
+                placeholder="your name *"
+                required
+                autocomplete="off"
+              />
+              <input
+                type="email"
+                class="email-input"
+                name="user_email"
+                placeholder="your e-mail *"
+                required
+                autocomplete="off"
+              />
+              <input
+                type="text"
+                class="subject-input"
+                name="subject"
+                placeholder="subject"
+                autocomplete="off"
+              />
+            </div>
+            <textarea
+              name="user_message"
+              class="user-message"
+              cols="30"
+              rows="10"
+              placeholder="your message *"
+              required
+              autocomplete="off"
+            ></textarea>
+          </div>
+          <button class="submit-form-btn" type="submit">Send Message</button>
+        </form>
       </section>
     </main>
   </body>
