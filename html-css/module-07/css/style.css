@@ -272,9 +272,9 @@ img {
   border-radius: 2px;
 }
 
-.inputs-wrapper input[class="username-input"]:valid,
-.inputs-wrapper input[class="email-input"]:valid,
-.user-message:valid {
+.inputs-wrapper input[class="username-input"]:focus:valid,
+.inputs-wrapper input[class="email-input"]:focus:valid,
+.user-message:focus:valid {
   outline: 3px solid #008000;
 }
 
