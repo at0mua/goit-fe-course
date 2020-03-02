@@ -43,16 +43,14 @@
   /* SECTION PROMO */
 
   .promo {
-    min-width: 768px;
     min-height: 700px;
   }
 
   .promo-header {
     justify-content: space-between;
     align-items: center;
-    min-height: 112px;
-    margin-bottom: 114px;
-    padding: 0 50px;
+    min-height: 114px;
+    margin-bottom: 110px;
   }
 
   .promo-title {
@@ -81,7 +79,6 @@
   }
 
   .partners-list {
-    padding: 0 138px 38px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -91,7 +88,35 @@
     flex: 0 0 236px;
   }
 
+  .partners-btn {
+    width: 192px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 939px) {
+  .promo-header {
+    padding: 0 50px;
+  }
+
+  .partners-list {
+    padding: 0 138px 38px;
+  }
+
   .partner-card:not(:nth-last-child(-n + 2)) {
     margin-bottom: 56px;
+  }
+}
+
+@media (min-width: 940px) {
+  .container {
+    width: 940px;
+  }
+
+  .partners {
+    padding: 72px 0;
+  }
+
+  .partner-card {
+    flex: 0 0 220px;
   }
 }

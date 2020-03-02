@@ -27,7 +27,6 @@ img {
 /* SECTION PROMO */
 
 .promo {
-  min-width: 320px;
   min-height: 540px;
   background-color: #1a1915;
   background-image: url(../img/Vector-Smart-Object.png);
@@ -178,13 +177,6 @@ img {
   background-image: url(../img/icons/icon-paper-plane.png);
 }
 
-.partners-btn {
-  color: #ff4e50;
-  font-weight: 700;
-  background-color: #ffffff;
-  border: 2px solid #ff4e50;
-}
-
 .partner-name {
   margin: 0 0 16px;
   font-size: 14px;
@@ -197,4 +189,11 @@ img {
   color: #666666;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+}
+
+.partners-btn {
+  color: #ff4e50;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
 }
