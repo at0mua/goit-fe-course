@@ -1,0 +1,95 @@
+@media (max-width: 767px) {
+  /* SECTION PROMO */
+
+  .promo-header {
+    padding-top: 20px;
+    padding-bottom: 38px;
+  }
+
+  .entry-menu {
+    padding-bottom: 118px;
+  }
+
+  .sub-title {
+    padding: 0 38px;
+  }
+
+  /* SECTION PARTNERS */
+
+  .section-partners {
+    padding-top: 70px;
+    padding-bottom: 58px;
+  }
+
+  .partner-card {
+    width: 220px;
+  }
+
+  .partner-item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* SECTION PROMO */
+
+  .section-promo {
+    min-height: 700px;
+  }
+
+  .promo-header {
+    min-height: 114px;
+    margin-bottom: 110px;
+  }
+
+  .promo-title {
+    margin-bottom: 40px;
+    font-size: 52px;
+  }
+
+  .sub-title {
+    margin-bottom: 38px;
+    font-size: 24px;
+  }
+
+  .page-btn {
+    width: 225px;
+  }
+
+  /* SECTION PARTNERS */
+
+  .section-partners {
+    padding-top: 78px;
+    padding-bottom: 40px;
+  }
+
+  .partners-title {
+    margin-bottom: 30px;
+  }
+
+  .partners-btn {
+    width: 192px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .partner-item:nth-child(2n + 1) {
+    margin-left: 124px;
+  }
+  .partner-item:nth-child(2n) {
+    margin-right: 124px;
+  }
+  .partner-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-partners {
+    padding: 72px 0;
+  }
+
+  .partner-card {
+    flex: 0 0 220px;
+  }
+}
