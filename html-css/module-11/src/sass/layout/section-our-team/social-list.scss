@@ -1,0 +1,42 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 26;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-right: 1px solid transparentize($secondary-color, 0.498);
+    background-color: $main-color;
+    transition: background-color 200ms linear;
+
+    &--instagram {
+      border: none;
+    }
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 26px;
+    height: 26px;
+    fill: $secondary-color;
+  }
+
+  &__link:hover &__icon {
+    fill: $white-font-color;
+  }
+}

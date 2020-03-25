@@ -1,0 +1,73 @@
+.our-team {
+  padding-bottom: 80px;
+
+  &__description {
+    margin: 0 auto;
+    padding: 44px 0 90px 0;
+    max-width: 980px;
+    font-size: 15px;
+    line-height: 24px;
+    color: $description-font-color;
+    font-family: $description-font;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__list {
+    @extend %d-f_s-b;
+  }
+
+  &__member {
+    width: 380px;
+  }
+
+  &__member-card {
+    position: relative;
+    background-color: $card-bg-color;
+  }
+
+  &__member-photo {
+    transition: transform 200ms linear;
+  }
+
+  &__member-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: $gradient;
+    z-index: 19;
+    opacity: 0;
+    transition: opacity 200ms linear, transform 200ms linear;
+  }
+
+  &__member-name {
+    margin: 28px 0 12px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__member-position {
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: $description-font-color;
+    font-family: $description-font;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+  }
+
+  /* CARD OVERLAY */
+
+  &__member:hover &__member-photo {
+    transform: translate(-10px, -10px);
+  }
+
+  &__member:hover &__member-card-overlay {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+  }
+}

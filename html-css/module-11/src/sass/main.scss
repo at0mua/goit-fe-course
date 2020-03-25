@@ -3,6 +3,7 @@
  */
 
 @import 'helpers/variables.scss';
+@import 'helpers/placeholders.scss';
 @import 'normalize.scss';
 @import 'base.scss';
 
@@ -12,4 +13,24 @@
 @import 'components/link.scss';
 @import 'components/list.scss';
 @import 'components/section-title.scss';
-@import 'components/section-banner.scss';
+
+/* SECTION BANNER */
+
+@import 'layout/section-banner/section-banner.scss';
+@import 'layout/section-banner/main-header.scss';
+@import 'layout/section-banner/page-navigation.scss';
+
+/* MAIN CONTENT */
+
+/* SECTION SERVICES */
+
+@import 'layout/section-services/section-services.scss';
+
+/* SECTION OUR TEAM*/
+
+@import 'layout/section-our-team/section-our-team.scss';
+@import 'layout/section-our-team/social-list.scss';
+
+/* FOTTER */
+
+@import 'layout/fotter/fotter.scss';

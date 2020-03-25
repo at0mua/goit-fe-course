@@ -1,0 +1,40 @@
+.banner {
+  width: 100%;
+  min-height: 1000px;
+  background-image: $gradient, url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: $gradient, url(../img/banner@2x.jpg);
+  }
+
+  &__title {
+    margin-bottom: 110px;
+    color: $white-font-color;
+  }
+
+  &__title--primary {
+    font-size: 150px;
+    font-weight: 700;
+  }
+
+  &__title--secondary {
+    font-size: 72px;
+    margin: 0;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: $white-font-color;
+    text-transform: uppercase;
+    border: 3px solid $white-font-color;
+  }
+}

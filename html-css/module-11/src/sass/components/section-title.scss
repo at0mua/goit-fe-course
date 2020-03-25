@@ -10,10 +10,10 @@
 
   &__secondary {
     display: block;
-    font-family: $second-font;
+    font-family: $design-font;
     margin-bottom: 18px;
     font-size: 24px;
-    text-transform: none;
+    font-weight: 400;
   }
 
   &--line::after {
@@ -22,6 +22,6 @@
     content: '';
     width: 60px;
     height: 3px;
-    background-color: #f38181;
+    background-color: $secondary-color;
   }
 }
