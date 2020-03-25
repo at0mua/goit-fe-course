@@ -1,0 +1,27 @@
+.section-title {
+  margin: 0 auto;
+  text-align: center;
+
+  &__primary {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  &__secondary {
+    display: block;
+    font-family: $second-font;
+    margin-bottom: 18px;
+    font-size: 24px;
+    text-transform: none;
+  }
+
+  &--line::after {
+    display: block;
+    margin: 40px auto 0 auto;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+  }
+}
